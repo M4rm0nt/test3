@@ -69,4 +69,10 @@ public class Main {
         }
         return (int) Math.floor(x * 100000 / 3600);
     }
+
+    public static String printerError(String s) {
+
+        return s.chars().filter(c -> c > 'm').count() + "/" + s.length();
+    }
+
 }

@@ -64,4 +64,10 @@ public class TestMain {
     public void testCockroachSpeedWithNegativeSpeed() {
         assertEquals(0, Main.cockroachSpeed(-1.08), "Negative speed");
     }
+
+    @Test
+    public void printerError() {
+        assertEquals("3/56", Main.printerError("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz"));
+    }
+
 }
